@@ -13,21 +13,31 @@
       <p id="description">Hey, thank you for giving us a chance to survey you!</p>
     </header>
     <form id="survey-form">
+        <h3>First, fill these information please!</h3>
         <label id="name-label" for="name">Your name</label>
         <input id="name" type="text" placeholder="Enter your name" required/>
         <label id="email-label" for="email">Email</label>
         <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required/>
         <label id="number-label" for="number">Age</label>
         <input id="number" type="number" name="age" min="18" max="80" class="form-control" placeholder="Age"/>
+        <div class="role">
+          <h3>Which option best describes your current role?</h3>
         <select id="dropdown" name="role" class="form-control" required>
           <option disabled selected value>Select current role</option>
           <option value="student">Student</option>
-          <option value="employee">Full Time Job</option>
-          <input
-              name="user-recommend"
-              value="definitely"
-              type="radio"
-              class="input-radio"input>
+          <option value="ex-student">Ex-student</option>
+        </select>
+        </div>
+          <div class="recommend">
+          <h3>Will you recommend Microverse to your friend?</h3>
+          <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+          <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+          </div>
+          <h3>What would you like to see improved?</h3>
+          <label><input name="improve" value="hours" type="checkbox">Less working hours</label>
+          <label><input name="improve" value="teacher-interaction" type="checkbox">More interaction with teachers</label>
+          <label><input name="improve" value="pace" type="checkbox">Slow the pace</label>
         </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
