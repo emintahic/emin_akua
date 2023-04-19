@@ -19,7 +19,16 @@
         <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required/>
         <label id="number-label" for="number">Age</label>
         <input id="number" type="number" name="age" min="18" max="80" class="form-control" placeholder="Age"/>
-      </form>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="employee">Full Time Job</option>
+          <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"input>
+        </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
