@@ -7,22 +7,19 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
+      <img id="header-img" src="https://assets-global.website-files.com/5dbb30f00775d4350591a4e5/6336e01871557ca78049bfcb_untitled-design.webp" height="150px" width="250px"/>
       <h1 id="title">Survey form</h1>
       <p id="description">Hey, thank you for giving us a chance to survey you!</p>
     </header>
     <form id="survey-form">
-        <label for="name">Your name</label>
-        <input id="name" type="text"/>
+        <label id="name-label" for="name">Your name</label>
+        <input id="name" type="text" placeholder="Enter your name" required/>
         <label id="email-label" for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          class="form-control"
-          placeholder="Enter your Email"
-          required
-        />    </form>
+        <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required/>
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" name="age" min="18" max="80" class="form-control" placeholder="Age"/>
+      </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
